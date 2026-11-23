@@ -1,0 +1,458 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services — 01 Bytesoft</title>
+  <meta name="description" content="Explore 01Bytesoft's full range of services: Machine Learning & AI, Cloud Adoption, Business Intelligence, IoT Solutions, Data Strategy, Data Management, Consulting and Staffing." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* ---- Service detail cards (expanded) ---- */
+    .service-detail {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 72px;
+      align-items: center;
+      padding: 80px 0;
+      border-bottom: 1px solid var(--gray-mid);
+    }
+    .service-detail:last-child { border-bottom: none; }
+    .service-detail.reverse { direction: rtl; }
+    .service-detail.reverse > * { direction: ltr; }
+
+    .service-detail-img {
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: var(--shadow-hover);
+    }
+    .service-detail-img img { width: 100%; height: 340px; object-fit: cover; }
+
+    .service-detail-content .section-tag { text-align: left; margin-bottom: 8px; }
+    .service-detail-content h2 { margin-bottom: 16px; font-size: 1.75rem; }
+    .service-detail-content p { color: var(--text-mid); margin-bottom: 14px; font-size: .95rem; line-height: 1.8; }
+
+    .service-highlights {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin: 20px 0 28px;
+    }
+    .highlight-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: .875rem;
+      color: var(--text-mid);
+    }
+    .highlight-item::before {
+      content: '';
+      width: 8px; height: 8px;
+      background: var(--orange);
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    @media (max-width: 900px) {
+      .service-detail { grid-template-columns: 1fr; gap: 40px; padding: 60px 0; }
+      .service-detail.reverse { direction: ltr; }
+      .service-highlights { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header>
+  <div class="container">
+    <nav class="nav-wrap">
+      <a href="index.html" class="logo" aria-label="01 Bytesoft Home">
+        <img src="assets/logo.png" alt="01 Bytesoft" class="logo-img" />
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li class="has-dropdown">
+          <a href="services.html" class="active">
+            Services
+            <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </a>
+          <ul class="dropdown" role="list">
+            <li><a href="#ml-ai">Machine Learning &amp; AI</a></li>
+            <li><a href="#cloud">Cloud Adoption</a></li>
+            <li><a href="#bi">Business Intelligence</a></li>
+            <li><a href="#iot">IoT Solutions</a></li>
+            <li><a href="#data-strategy">Data Strategy</a></li>
+            <li><a href="#data-mgmt">Data Management</a></li>
+            <li><a href="#consulting">Consulting</a></li>
+            <li><a href="#staffing">Staffing</a></li>
+          </ul>
+        </li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </nav>
+  </div>
+</header>
+
+<div class="mobile-nav">
+  <a href="index.html">Home</a>
+  <div class="mobile-services-toggle" role="button">
+    Services
+    <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="18" height="18"><polyline points="6 9 12 15 18 9"/></svg>
+  </div>
+  <div class="mobile-submenu">
+    <a href="#ml-ai">Machine Learning &amp; AI</a>
+    <a href="#cloud">Cloud Adoption</a>
+    <a href="#bi">Business Intelligence</a>
+    <a href="#iot">IoT Solutions</a>
+    <a href="#data-strategy">Data Strategy</a>
+    <a href="#data-mgmt">Data Management</a>
+    <a href="#consulting">Consulting</a>
+    <a href="#staffing">Staffing</a>
+  </div>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<!-- ===== PAGE HERO ===== -->
+<section class="page-hero">
+  <div class="container page-hero-inner">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span class="breadcrumb-sep">›</span>
+      <span>Services</span>
+    </div>
+    <h1>Our Services</h1>
+    <p style="color:rgba(255,255,255,0.65);margin-top:12px;font-size:1.05rem;max-width:600px;">
+      Economical Digital Transformation services that keep your business competitive and profitable.
+    </p>
+  </div>
+</section>
+
+<!-- ===== SERVICE OVERVIEW CARDS ===== -->
+<section class="services section-pad-sm" style="background:var(--gray-light);">
+  <div class="container">
+    <div class="services-grid">
+      <a href="#ml-ai" class="service-card reveal" style="text-decoration:none;">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke="var(--orange)"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+        </div>
+        <h3>Machine Learning &amp; AI</h3>
+        <p>Intelligent solutions that automate decisions and surface hidden patterns in your data.</p>
+        <span class="service-link">Explore <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+      </a>
+      <a href="#cloud" class="service-card reveal" style="text-decoration:none;">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke="var(--orange)"><path d="M18 10h-1.26A8 8 0 109 20h9a5 5 0 000-10z"/></svg>
+        </div>
+        <h3>Cloud Adoption</h3>
+        <p>Cloud-agnostic migration, optimisation, and ongoing management across AWS, Azure, and GCP.</p>
+        <span class="service-link">Explore <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+      </a>
+      <a href="#bi" class="service-card reveal" style="text-decoration:none;">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke="var(--orange)"><rect x="2" y="3" width="20" height="14" rx="2"/><polyline points="7 8 12 13 17 8"/></svg>
+        </div>
+        <h3>Business Intelligence</h3>
+        <p>Interactive dashboards and reports that turn raw data into confident business decisions.</p>
+        <span class="service-link">Explore <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+      </a>
+      <a href="#iot" class="service-card reveal" style="text-decoration:none;">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke="var(--orange)"><rect x="2" y="9" width="4" height="6" rx="1"/><rect x="10" y="6" width="4" height="12" rx="1"/><rect x="18" y="11" width="4" height="4" rx="1"/><path d="M6 12h4M14 12h4"/></svg>
+        </div>
+        <h3>IoT Solutions</h3>
+        <p>End-to-end connected-device ecosystems delivering real-time operational insight.</p>
+        <span class="service-link">Explore <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+      </a>
+      <a href="#data-strategy" class="service-card reveal" style="text-decoration:none;">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke="var(--orange)"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        </div>
+        <h3>Data Strategy</h3>
+        <p>A comprehensive data roadmap aligned to your specific business goals and growth plans.</p>
+        <span class="service-link">Explore <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+      </a>
+      <a href="#data-mgmt" class="service-card reveal" style="text-decoration:none;">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke="var(--orange)"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+        </div>
+        <h3>Data Management</h3>
+        <p>Governance, pipelines, and quality frameworks so your data is always reliable and accessible.</p>
+        <span class="service-link">Explore <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVICE DETAILS ===== -->
+<section style="background:var(--white);padding-bottom:40px;">
+  <div class="container">
+
+    <!-- ML & AI -->
+    <div class="service-detail" id="ml-ai">
+      <div class="service-detail-img reveal">
+        <img src="https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=800&q=80" alt="Machine Learning AI visualization" loading="lazy" />
+      </div>
+      <div class="service-detail-content reveal">
+        <span class="section-tag">Service</span>
+        <h2>Machine Learning &amp; AI</h2>
+        <p>When you deal with us, these are not just fancy jargon but important technologies. We build production-ready ML models and AI systems that solve specific, measurable business problems — from demand forecasting to anomaly detection.</p>
+        <p>Our data scientists and engineers work alongside your team to ensure every model is interpretable, maintainable, and genuinely impactful.</p>
+        <div class="service-highlights">
+          <span class="highlight-item">Predictive Analytics</span>
+          <span class="highlight-item">Natural Language Processing</span>
+          <span class="highlight-item">Computer Vision</span>
+          <span class="highlight-item">Recommendation Engines</span>
+          <span class="highlight-item">Anomaly Detection</span>
+          <span class="highlight-item">Process Automation</span>
+        </div>
+        <a href="contact.html" class="btn btn-primary">Start a Project</a>
+      </div>
+    </div>
+
+    <!-- Cloud Adoption -->
+    <div class="service-detail reverse" id="cloud">
+      <div class="service-detail-img reveal">
+        <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=800&q=80" alt="Cloud computing infrastructure" loading="lazy" />
+      </div>
+      <div class="service-detail-content reveal">
+        <span class="section-tag">Service</span>
+        <h2>Cloud Adoption</h2>
+        <p>Our Cloud Advisory and Technology Services help you compete head-to-head with industry leaders. Whether you are migrating from on-premises, re-architecting a legacy app, or building cloud-native from scratch, we guide every step.</p>
+        <p>We are platform-agnostic: AWS, Microsoft Azure, and Google Cloud Platform — we'll recommend and implement the best fit for your workloads.</p>
+        <div class="service-highlights">
+          <span class="highlight-item">Cloud Readiness Assessment</span>
+          <span class="highlight-item">Migration Planning &amp; Execution</span>
+          <span class="highlight-item">Cost Optimisation</span>
+          <span class="highlight-item">Security &amp; Compliance</span>
+          <span class="highlight-item">DevOps &amp; CI/CD</span>
+          <span class="highlight-item">Hybrid &amp; Multi-Cloud</span>
+        </div>
+        <a href="contact.html" class="btn btn-primary">Start a Project</a>
+      </div>
+    </div>
+
+    <!-- Business Intelligence -->
+    <div class="service-detail" id="bi">
+      <div class="service-detail-img reveal">
+        <img src="https://images.unsplash.com/photo-1543286386-713bdd548da4?w=800&q=80" alt="Business Intelligence dashboard" loading="lazy" />
+      </div>
+      <div class="service-detail-content reveal">
+        <span class="section-tag">Service</span>
+        <h2>Business Intelligence</h2>
+        <p>From Data Sourcing to Decision Support, we give you the information you need. We design and deploy BI solutions that make it easy for every stakeholder — from C-suite to operations — to access the right data at the right time.</p>
+        <div class="service-highlights">
+          <span class="highlight-item">Dashboard Design (Power BI / Tableau)</span>
+          <span class="highlight-item">KPI Framework Development</span>
+          <span class="highlight-item">Data Warehousing</span>
+          <span class="highlight-item">ETL / ELT Pipelines</span>
+          <span class="highlight-item">Self-Service BI Enablement</span>
+          <span class="highlight-item">Executive Reporting</span>
+        </div>
+        <a href="contact.html" class="btn btn-primary">Start a Project</a>
+      </div>
+    </div>
+
+    <!-- IoT Solutions -->
+    <div class="service-detail reverse" id="iot">
+      <div class="service-detail-img reveal">
+        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80" alt="IoT connected devices network" loading="lazy" />
+      </div>
+      <div class="service-detail-content reveal">
+        <span class="section-tag">Service</span>
+        <h2>IoT Solutions</h2>
+        <p>The Internet revolutionised lives. The IoT is promising to do it all over again. We design end-to-end IoT ecosystems — from sensor hardware selection and firmware, through connectivity and edge computing, to cloud ingestion and analytics.</p>
+        <div class="service-highlights">
+          <span class="highlight-item">Device Architecture &amp; Selection</span>
+          <span class="highlight-item">Edge Computing</span>
+          <span class="highlight-item">Real-time Monitoring</span>
+          <span class="highlight-item">Predictive Maintenance</span>
+          <span class="highlight-item">Industrial IoT (IIoT)</span>
+          <span class="highlight-item">IoT Security</span>
+        </div>
+        <a href="contact.html" class="btn btn-primary">Start a Project</a>
+      </div>
+    </div>
+
+    <!-- Data Strategy -->
+    <div class="service-detail" id="data-strategy">
+      <div class="service-detail-img reveal">
+        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80" alt="Data strategy planning" loading="lazy" />
+      </div>
+      <div class="service-detail-content reveal">
+        <span class="section-tag">Service</span>
+        <h2>Data Strategy</h2>
+        <p>Your business goals drive our data strategy. We build a comprehensive roadmap covering data sourcing, governance, storage, access, and monetisation — all aligned to what your organisation is trying to achieve.</p>
+        <div class="service-highlights">
+          <span class="highlight-item">Data Maturity Assessment</span>
+          <span class="highlight-item">Roadmap Development</span>
+          <span class="highlight-item">Governance Framework</span>
+          <span class="highlight-item">Data Cataloguing</span>
+          <span class="highlight-item">Metadata Management</span>
+          <span class="highlight-item">ROI Measurement</span>
+        </div>
+        <a href="contact.html" class="btn btn-primary">Start a Project</a>
+      </div>
+    </div>
+
+    <!-- Data Management -->
+    <div class="service-detail reverse" id="data-mgmt">
+      <div class="service-detail-img reveal">
+        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80" alt="Data management servers" loading="lazy" />
+      </div>
+      <div class="service-detail-content reveal">
+        <span class="section-tag">Service</span>
+        <h2>Data Management</h2>
+        <p>Modern computers and devices generate data that is voluminous, diverse, and fast-moving. We tame it with robust data architecture, quality controls, and lifecycle management so your data works for you, not against you.</p>
+        <div class="service-highlights">
+          <span class="highlight-item">Master Data Management</span>
+          <span class="highlight-item">Data Quality &amp; Cleansing</span>
+          <span class="highlight-item">Data Lake / Lakehouse Design</span>
+          <span class="highlight-item">Pipeline Orchestration</span>
+          <span class="highlight-item">Data Lineage Tracking</span>
+          <span class="highlight-item">Compliance &amp; Privacy</span>
+        </div>
+        <a href="contact.html" class="btn btn-primary">Start a Project</a>
+      </div>
+    </div>
+
+    <!-- Consulting -->
+    <div class="service-detail" id="consulting">
+      <div class="service-detail-img reveal">
+        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80" alt="Technology consulting session" loading="lazy" />
+      </div>
+      <div class="service-detail-content reveal">
+        <span class="section-tag">Service</span>
+        <h2>Consulting</h2>
+        <p>Need expert guidance without a full implementation? Our advisory service gives your leadership team access to seasoned technology consultants who can evaluate your current state, identify opportunities, and define the right path forward.</p>
+        <div class="service-highlights">
+          <span class="highlight-item">Technology Due Diligence</span>
+          <span class="highlight-item">Architecture Reviews</span>
+          <span class="highlight-item">Vendor Selection</span>
+          <span class="highlight-item">Digital Transformation Roadmaps</span>
+          <span class="highlight-item">CTO-as-a-Service</span>
+          <span class="highlight-item">Workshop &amp; Training</span>
+        </div>
+        <a href="contact.html" class="btn btn-primary">Book a Consultation</a>
+      </div>
+    </div>
+
+    <!-- Staffing -->
+    <div class="service-detail reverse" id="staffing">
+      <div class="service-detail-img reveal">
+        <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=800&q=80" alt="Technology staffing team" loading="lazy" />
+      </div>
+      <div class="service-detail-content reveal">
+        <span class="section-tag">Service</span>
+        <h2>Staffing</h2>
+        <p>Need skilled data and cloud professionals on-demand? We provide vetted technology talent — data engineers, data scientists, BI developers, and cloud architects — on contract, project, or permanent placement basis.</p>
+        <div class="service-highlights">
+          <span class="highlight-item">Data Engineers</span>
+          <span class="highlight-item">Data Scientists</span>
+          <span class="highlight-item">BI Developers</span>
+          <span class="highlight-item">Cloud Architects</span>
+          <span class="highlight-item">ML Engineers</span>
+          <span class="highlight-item">Contract &amp; Permanent</span>
+        </div>
+        <a href="contact.html" class="btn btn-primary">Find Talent</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== CTA BANNER ===== -->
+<div class="quote-banner">
+  <div class="container">
+    <div class="quote-inner">
+      <div>
+        <h2 class="reveal">Not sure which service you need?</h2>
+        <p class="reveal" style="color:rgba(255,255,255,0.65);">Book a free 30-minute discovery call and our team will help you find the right fit.</p>
+      </div>
+      <div>
+        <a href="contact.html" class="btn btn-primary" style="font-size:1rem;padding:16px 40px;">Book a Free Call</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="footer-top">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" aria-label="01 Bytesoft Home">
+            <img src="assets/logo-white.png" alt="01 Bytesoft" class="logo-img" />
+          </a>
+          <p>Our economical Digital Transformation services are today's technology catalysts that keep your business competitive and profitable.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:Contacts@01Bytesoft.com">Contacts@01Bytesoft.com</a>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 012.18 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.09a16 16 0 006 6l1.46-1.46a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            <a href="tel:5513200426">+1 (551) 320 0426</a>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>80 Remington Ave, Monroe Twp, NJ 08831</span>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <h5 style="margin-top:28px;">Services</h5>
+          <ul>
+            <li><a href="#ml-ai">Machine Learning &amp; AI</a></li>
+            <li><a href="#cloud">Cloud Adoption</a></li>
+            <li><a href="#bi">Business Intelligence</a></li>
+            <li><a href="#iot">IoT Solutions</a></li>
+            <li><a href="#data-strategy">Data Strategy</a></li>
+            <li><a href="#data-mgmt">Data Management</a></li>
+            <li><a href="#consulting">Consulting</a></li>
+            <li><a href="#staffing">Staffing</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Newsletter</h5>
+          <p style="color:rgba(255,255,255,0.5);font-size:.875rem;">Stay updated with our latest insights.</p>
+          <form class="newsletter-form" novalidate>
+            <div class="newsletter-row" style="margin-top:16px;">
+              <input type="email" placeholder="@ Email address" required />
+              <button type="submit">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="footer-bottom-wrap">
+        <p>© 2024 01Bytesoft. All rights reserved.</p>
+        <p>Built with ❤️ for digital excellence</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button class="scroll-top" aria-label="Scroll to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>

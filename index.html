@@ -1,0 +1,489 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>01 Bytesoft — Data Analytics, Business Intelligence & AI Consulting</title>
+  <meta name="description" content="01Bytesoft delivers Data Analytics, Business Intelligence, Machine Learning, Cloud Adoption, IoT, and Data Management services to help SMEs transform digitally." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header>
+  <div class="container">
+    <nav class="nav-wrap">
+      <!-- Logo -->
+      <a href="index.html" class="logo" aria-label="01 Bytesoft Home">
+        <img src="assets/logo.png" alt="01 Bytesoft" class="logo-img" />
+      </a>
+
+      <!-- Desktop nav -->
+      <ul class="nav-links" role="list">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li class="has-dropdown">
+          <a href="#services">
+            Services
+            <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </a>
+          <ul class="dropdown" role="list">
+            <li><a href="services.html#ml-ai">Machine Learning &amp; AI</a></li>
+            <li><a href="services.html#cloud">Cloud Adoption</a></li>
+            <li><a href="services.html#bi">Business Intelligence</a></li>
+            <li><a href="services.html#iot">IoT Solutions</a></li>
+            <li><a href="services.html#data-strategy">Data Strategy</a></li>
+            <li><a href="services.html#data-mgmt">Data Management</a></li>
+            <li><a href="services.html#consulting">Consulting</a></li>
+            <li><a href="services.html#staffing">Staffing</a></li>
+          </ul>
+        </li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <!-- Hamburger -->
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<!-- Mobile nav -->
+<div class="mobile-nav" aria-hidden="true">
+  <a href="index.html">Home</a>
+  <div class="mobile-services-toggle" role="button" aria-expanded="false">
+    Services
+    <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="18" height="18"><polyline points="6 9 12 15 18 9"/></svg>
+  </div>
+  <div class="mobile-submenu">
+    <a href="services.html#ml-ai">Machine Learning &amp; AI</a>
+    <a href="services.html#cloud">Cloud Adoption</a>
+    <a href="services.html#bi">Business Intelligence</a>
+    <a href="services.html#iot">IoT Solutions</a>
+    <a href="services.html#data-strategy">Data Strategy</a>
+    <a href="services.html#data-mgmt">Data Management</a>
+    <a href="services.html#consulting">Consulting</a>
+    <a href="services.html#staffing">Staffing</a>
+  </div>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="home">
+  <div class="container">
+    <div class="hero-grid">
+      <!-- Left -->
+      <div class="hero-content">
+        <span class="hero-eyebrow animate-up">Digital Transformation</span>
+        <h1 class="animate-up delay-1">Unleash the <em>Power of Data</em></h1>
+        <p class="hero-lead animate-up delay-2">Exceed Your Business Goals with our Data Analytics, Business Intelligence, and Data Science Services</p>
+        <p class="hero-sub animate-up delay-2">Our economical Digital Transformation services are today's technology catalysts that keep your business competitive and profitable.</p>
+        <div class="hero-cta animate-up delay-3">
+          <a href="contact.html" class="btn btn-primary">Book a Call</a>
+          <a href="#services" class="btn btn-outline">Our Services</a>
+        </div>
+      </div>
+
+      <!-- Right visual -->
+      <div class="hero-visual animate-up delay-2">
+        <div class="hero-img-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80"
+            alt="Data analytics dashboard on tablet and charts"
+            loading="eager"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STATS STRIP ===== -->
+<div class="stats-strip">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item reveal">
+        <h3><span data-count="15" data-suffix="+">0+</span></h3>
+        <p>Projects Delivered</p>
+      </div>
+      <div class="stat-item reveal">
+        <h3><span data-count="10" data-suffix="+">0+</span></h3>
+        <p>Happy Clients</p>
+      </div>
+      <div class="stat-item reveal">
+        <h3><span data-count="5" data-suffix="+">0+</span></h3>
+        <p>Years Experience</p>
+      </div>
+      <div class="stat-item reveal">
+        <h3><span data-count="6">0</span></h3>
+        <p>Core Services</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== CLIENTS ===== -->
+<section class="clients-section">
+  <div class="container">
+    <div class="section-header reveal" style="margin-bottom:36px;">
+      <span class="section-tag">Trusted By</span>
+      <h2>Our Clients</h2>
+      <div class="divider"></div>
+    </div>
+  </div>
+  <div class="clients-track-wrap">
+    <div class="clients-track">
+      <div class="client-logo"><img src="assets/clients/firstmco.png"        alt="First MCO — First Managed Care Option" /></div>
+      <div class="client-logo"><img src="assets/clients/onward.png"          alt="Onward" /></div>
+      <div class="client-logo"><img src="assets/clients/oncorre.png"         alt="Oncorre Digital" /></div>
+      <div class="client-logo"><img src="assets/clients/creativexchange.png" alt="Creative Xchange" /></div>
+      <!-- duplicate set for seamless loop -->
+      <div class="client-logo"><img src="assets/clients/firstmco.png"        alt="First MCO" aria-hidden="true" /></div>
+      <div class="client-logo"><img src="assets/clients/onward.png"          alt="Onward" aria-hidden="true" /></div>
+      <div class="client-logo"><img src="assets/clients/oncorre.png"         alt="Oncorre Digital" aria-hidden="true" /></div>
+      <div class="client-logo"><img src="assets/clients/creativexchange.png" alt="Creative Xchange" aria-hidden="true" /></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section class="services section-pad" id="services">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">What We Do</span>
+      <h2>Our Services</h2>
+      <p>Our economical Digital Transformation services are today's technology catalysts that keep your business competitive and profitable.</p>
+      <div class="divider"></div>
+    </div>
+
+    <div class="services-grid">
+
+      <!-- ML & AI -->
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+        </div>
+        <h3>Machine Learning &amp; AI</h3>
+        <p>When you deal with us, these are not just fancy jargon but important technologies that solve real business problems — from predictive analytics to intelligent automation.</p>
+        <a href="services.html#ml-ai" class="service-link">
+          Learn More
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <!-- Cloud Adoption -->
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" stroke-width="1.5"><path d="M18 10h-1.26A8 8 0 109 20h9a5 5 0 000-10z"/><rect x="8" y="14" width="8" height="6" rx="1"/><path d="M12 14v-4"/></svg>
+        </div>
+        <h3>Cloud Adoption</h3>
+        <p>Our Cloud Advisory and Technology Services help you compete head-to-head with industry leaders by migrating and optimising your infrastructure on any major cloud platform.</p>
+        <a href="services.html#cloud" class="service-link">
+          Learn More
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <!-- Business Intelligence -->
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><polyline points="7 8 12 13 17 8"/></svg>
+        </div>
+        <h3>Business Intelligence</h3>
+        <p>From Data Sourcing to Decision Support, we give you the information you need to act confidently — with interactive dashboards, KPI tracking, and actionable reporting.</p>
+        <a href="services.html#bi" class="service-link">
+          Learn More
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <!-- IoT -->
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" stroke-width="1.5"><rect x="2" y="9" width="4" height="6" rx="1"/><rect x="10" y="6" width="4" height="12" rx="1"/><rect x="18" y="11" width="4" height="4" rx="1"/><path d="M6 12h4M14 12h4"/></svg>
+        </div>
+        <h3>IoT Solutions</h3>
+        <p>The Internet revolutionised lives. The IoT is promising to do it all over again. We design and implement connected-device ecosystems that deliver real-time insights from the physical world.</p>
+        <a href="services.html#iot" class="service-link">
+          Learn More
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <!-- Data Strategy -->
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        </div>
+        <h3>Data Strategy</h3>
+        <p>Your business goals drive our data strategy. Efficient extraction, fast sorting, and reliable storage all aligned to what matters most to your organisation's growth.</p>
+        <a href="services.html#data-strategy" class="service-link">
+          Learn More
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <!-- Data Management -->
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" stroke-width="1.5"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+        </div>
+        <h3>Data Management</h3>
+        <p>Modern computers generate data that is voluminous and diverse. We tame it with governance frameworks, pipelines, and quality controls so your data works for you, not against you.</p>
+        <a href="services.html#data-mgmt" class="service-link">
+          Learn More
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== FREE QUOTE BANNER ===== -->
+<div class="quote-banner">
+  <div class="container">
+    <div class="quote-inner">
+      <div>
+        <h2 class="reveal">Ready to transform your business?</h2>
+        <p class="reveal">Tell us about your project and get a free, no-obligation quote.</p>
+        <p id="quoteStatus" class="form-status" style="margin-top:10px;"></p>
+      </div>
+      <form id="quoteForm" class="quote-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <input type="text" name="name" placeholder="Your Name / Company" required aria-label="Name or Company" />
+        <input type="email" name="email" placeholder="Email Address" required aria-label="Email" />
+        <input type="hidden" name="_subject" value="Free Quote Request — 01Bytesoft" />
+        <button type="submit" class="btn btn-primary">Get a Free Quote</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- ===== ABOUT / RELIABLE DATA SECTION ===== -->
+<section class="about-split section-pad">
+  <div class="container">
+    <div class="split-grid">
+      <div class="split-img reveal">
+        <img
+          src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=800&q=80"
+          alt="Person using data dashboard on laptop"
+          loading="lazy"
+        />
+      </div>
+      <div class="split-content reveal">
+        <span class="section-tag">Why Choose Us</span>
+        <h2>Reliable Data is the Currency</h2>
+        <h3>You Define the Business Objectives — We Extract Actionable Insights</h3>
+        <p>Data that is useful in one context can prove insignificant in another. The value of data stored in your systems is directly proportional to its importance to your business objectives.</p>
+        <p>We ensure end-to-end support — from identifying reliable data sources and building robust pipelines to surfacing insights that drive confident decisions at every level of your organisation.</p>
+        <a href="about.html" class="btn btn-primary" style="margin-top:8px;">Learn About Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHY US ===== -->
+<section class="why-us section-pad">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Our Approach</span>
+      <h2>Why Businesses Choose 01Bytesoft</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+        </div>
+        <h3>SME-Focused</h3>
+        <p>Tailored solutions built around the budgets, timelines, and goals of small and medium enterprises — not enterprise-only pricing.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <h3>Results-Driven</h3>
+        <p>Every engagement is scoped around measurable outcomes — ROI, efficiency gains, and revenue growth you can actually see on your P&amp;L.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3>Risk-Controlled</h3>
+        <p>Consensus-based technology procurement and a step-by-step change approach protect your business from costly implementation failures.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+        </div>
+        <h3>End-to-End Support</h3>
+        <p>From discovery and design through deployment and ongoing optimisation — we are your single partner for the entire technology journey.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT (inline) ===== -->
+<section class="contact-section section-pad" id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <!-- Left -->
+      <div class="contact-info reveal">
+        <span class="section-tag">Let's Talk</span>
+        <h2>Get In Touch</h2>
+        <p style="color:rgba(255,255,255,0.55);margin-bottom:36px;font-size:.95rem;">
+          Ready to start your digital transformation journey? Reach out and we'll respond within one business day.
+        </p>
+
+        <div class="contact-detail">
+          <div class="contact-detail-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div class="contact-detail-text">
+            <p>Email Us</p>
+            <a href="mailto:Contacts@01Bytesoft.com">Contacts@01Bytesoft.com</a>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-detail-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3-8.63A2 2 0 012.18 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.09a16 16 0 006 6l1.46-1.46a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          </div>
+          <div class="contact-detail-text">
+            <p>Call Us</p>
+            <a href="tel:5513200426">+1 (551) 320 0426</a>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-detail-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div class="contact-detail-text">
+            <p>Office</p>
+            <p>80 Remington Ave, Monroe Twp, NJ 08831</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: form -->
+      <div class="contact-form-wrap reveal">
+        <h3>Send Us a Message</h3>
+        <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cf-name">Your Name</label>
+              <input type="text" id="cf-name" name="name" class="form-control" placeholder="John Smith" required />
+            </div>
+            <div class="form-group">
+              <label for="cf-email">Email Address</label>
+              <input type="email" id="cf-email" name="email" class="form-control" placeholder="john@company.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="cf-subject">Subject</label>
+            <input type="text" id="cf-subject" name="subject" class="form-control" placeholder="How can we help?" />
+          </div>
+          <div class="form-group">
+            <label for="cf-message">Message</label>
+            <textarea id="cf-message" name="message" class="form-control" placeholder="Tell us about your project…" required></textarea>
+          </div>
+          <input type="hidden" name="_subject" value="Contact Form — 01Bytesoft" />
+          <button type="submit" class="btn btn-primary" style="width:100%;">Send Message</button>
+          <p class="form-status" style="margin-top:14px;"></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="footer-top">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Brand -->
+        <div class="footer-brand">
+          <a href="index.html" class="logo" aria-label="01 Bytesoft Home">
+            <img src="assets/logo-white.png" alt="01 Bytesoft" class="logo-img" />
+          </a>
+          <p>Our economical Digital Transformation services are today's technology catalysts that keep your business competitive and profitable.</p>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:Contacts@01Bytesoft.com">Contacts@01Bytesoft.com</a>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3-8.63A2 2 0 012.18 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.09a16 16 0 006 6l1.46-1.46a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            <a href="tel:5513200426">+1 (551) 320 0426</a>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>80 Remington Ave, Monroe Twp, NJ 08831</span>
+          </div>
+        </div>
+
+        <!-- Quick links -->
+        <div class="footer-col">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <h5 style="margin-top:28px;">Services</h5>
+          <ul>
+            <li><a href="services.html#ml-ai">Machine Learning &amp; AI</a></li>
+            <li><a href="services.html#cloud">Cloud Adoption</a></li>
+            <li><a href="services.html#bi">Business Intelligence</a></li>
+            <li><a href="services.html#iot">IoT Solutions</a></li>
+            <li><a href="services.html#data-strategy">Data Strategy</a></li>
+            <li><a href="services.html#data-mgmt">Data Management</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer-col">
+          <h5>Newsletter</h5>
+          <p style="color:rgba(255,255,255,0.5);font-size:.875rem;margin-bottom:4px;">Stay updated with our latest insights and technology news.</p>
+          <form class="newsletter-form" novalidate>
+            <div class="newsletter-row" style="margin-top:16px;">
+              <input type="email" placeholder="@ Email address" aria-label="Email for newsletter" required />
+              <button type="submit">Subscribe</button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="footer-bottom-wrap">
+        <p>© 2024 01Bytesoft. All rights reserved.</p>
+        <p>Built with ❤️ for digital excellence</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Scroll to top -->
+<button class="scroll-top" aria-label="Scroll to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>
